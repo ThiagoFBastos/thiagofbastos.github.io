@@ -13,7 +13,7 @@
 title: My website
 
 # Your name to show in the footer
-author: Some Person
+author: Thiago Felipe Bastos da Silva
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -22,9 +22,14 @@ author: Some Person
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - Linkedin: "https://www.linkedin.com/in/thiago-bastos-845a691a6/"
+    - Codeforces: "https://codeforces.com/profile/thiago_bastos/"
+    - Atcoder: "https://atcoder.jp/users/thiago_bastos/"
+    - Codechef: "https://www.codechef.com/users/far_from_tle/"
+    - Uva Online Judge: "https://uhunt.onlinejudge.org/id/1023716/"
+    - Leetcode: "https://leetcode.com/u/thiago_bastos/"
+    - Codewars: "https://www.codewars.com/users/thiago_bastos"
+  Author's home: "https://thiagofbastos.github.io/"
 
 ################
 # --- Logo --- #
@@ -50,17 +55,17 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+#  email: "thiagobastos1705@gmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
-  whatsapp: 15551212
+#  facebook: "Thiago Bastos"
+  github: "ThiagoFBastos"
+  twitter: "ThiagoFBastos"
+#  patreon: ""
+  youtube: "@thiagofbastos"
+#  whatsapp: 123
 #  medium: yourname
 #  reddit: yourname or r/yoursubreddit
-#  linkedin: daattali
+  linkedin: "thiago-bastos-845a691a6"
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -260,7 +265,7 @@ date_format: "%B %-d, %Y"
 #################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "America/Sao Paulo"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
