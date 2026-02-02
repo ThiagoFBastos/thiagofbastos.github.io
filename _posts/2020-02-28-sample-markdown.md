@@ -1,100 +1,45 @@
 ---
 layout: post
-title: Sample blog post to learn markdown tips
-subtitle: There's lots to learn!
-gh-repo: daattali/beautiful-jekyll
+title: Closest String Problem
+subtitle: Final project of my Computer Science Graduation
+gh-repo: ThiagoFBastos/Closest-String-Problem
 gh-badge: [star, fork, follow]
 tags: [test]
 comments: true
 mathjax: true
-author: Bill Smith
+author: Thiago Felipe Bastos da Silva
 ---
 
-{: .box-success}
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/tables/etc.<br/>I also encourage you to look at the [code that created this post](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/_posts/2020-02-28-sample-markdown.md) to learn some more advanced tips about using markdown in Beautiful Jekyll.
+## Closest String Problem
 
-**Here is some bold text**
+### Purpose
+The Closest String Problem has many applications in bioinformatics and your target is to find a string t, given a set S with strings of same length, such that maximum Hamming Distance between t and all $S_i$, $1 \le i \le |S|$, be minimum. Since it belongs the np-hard class is no known a polynomial algorithm in order to solve it. Therefore, to get a solution uses some exact method with restriction or uses some heuristic that not guarantees optimality but the answer is obtained in a reasonable time. Therefore, this work proposes to create algorithms based on metaheuristics already known as: Simulated Annealing, Iterated Local Search and Genetic Algorithm and compare the results with what has already been obtained in the literature.
 
-## Here is a secondary heading
+### Definition of the problem
+Let $S$ be a sequence of strings ${ S_1, S_2, S_3, \ldots, S_n }$ with $|S_i| = m$, whose characters belong to an alphabet $\Sigma$. The Closest String Problem consists of finding a string $T$, also of length $m$, such that the maximum Hamming distance between $T$ and all strings in the input set $S$ is minimized, i.e.,  $T$ = $argmin_T$ ${max_{1 \le i \le n}{d(S_i, T)}}$.
 
-[This is a link to a different site](https://deanattali.com/) and [this is a link to a section inside this page](#local-urls).
+### Heuristics of initial solution
 
-Here's a table:
+There are four heuristics for initial solution that are used by the meta-heuristics that i have implemented. Here are them:
+1. The algorithm 1 consists of generating a string in which each position $1 \le j \le m$ contains a character randomly chosen from among the characters present in column $j$ of the input strings.
+2. Algorithm 2, which was based on the work by (SANTOS, 2018) in his master’s thesis, follows a greedy strategy for constructing the string and, for this purpose, randomly selects, for each position, one of the most frequent characters at that position.
+3. Algorithm 3 consists of generating a string $T$ by assigning each of its positions to one of the input strings in such a way that the number of positions assigned to any string differs by at most one unit from the others. Once the assignment is performed, the characters at the positions assigned to the input strings are copied to the corresponding positions in the string $T$.
+4. Algorithm 4 consists of generating a string $T$ by merging the input strings in a predefined order. Each merge assigns $\frac{1}{i}$ of the positions that have different characters to one of the strings, and the remaining positions to the other.
 
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
+### Metaheuristics
 
-You can use [MathJax](https://www.mathjax.org/) to write LaTeX expressions. For example:
-When \\(a \ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+- Simulated Annealing
+- Parallel Simulated Annealing
+- ILS (Iterated Local Search) using as local search the simulated annealing
+- Generic Algorithm
 
-How about a yummy crepe?
+### Project
 
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg)
+The project can be found at [link](https://github.com/ThiagoFBastos/Closest-String-Problem)
 
-It can also be centered!
+### Technologies
 
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg){: .mx-auto.d-block :}
-
-Here's a code chunk:
-
-~~~
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-~~~
-
-And here is the same code with syntax highlighting:
-
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-```
-
-And here is the same code yet again but with line numbers:
-
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
-
-## Boxes
-You can add notification, warning and error boxes like this:
-
-### Notification
-
-{: .box-note}
-**Note:** This is a notification box.
-
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
-
-## Local URLs in project sites {#local-urls}
-
-When hosting a *project site* on GitHub Pages (for example, `https://USERNAME.github.io/MyProject`), URLs that begin with `/` and refer to local files may not work correctly due to how the root URL (`/`) is interpreted by GitHub Pages. You can read more about it [in the FAQ](https://beautifuljekyll.com/faq/#links-in-project-page). To demonstrate the issue, the following local image will be broken **if your site is a project site:**
-
-![Crepe](/assets/img/crepe.jpg)
-
-If the above image is broken, then you'll need to follow the instructions [in the FAQ](https://beautifuljekyll.com/faq/#links-in-project-page). Here is proof that it can be fixed:
-
-![Crepe]({{ '/assets/img/crepe.jpg' | relative_url }})
-
-<details markdown="1">
-<summary>Click here!</summary>
-Here you can see an **expandable** section
-</details>
+- C++17
+- GNU Make
+- Pthread
+- Vectorized instructions
