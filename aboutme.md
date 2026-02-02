@@ -26,17 +26,17 @@ Currently, I work as a C++ Developer at Tecgraf/PUC-Rio.
 
 ### Academic Background
 
-- System Development course - Colégio Pedro II | 2015 - 2017
-- Computer Science bachelor - UFRRJ | 2018 - 2023
+- System Development course \ Colégio Pedro II \ 2015 - 2017
+- Computer Science bachelor \ UFRRJ \ 2018 - 2023
 
 ### Experience
 
-- Programming Tutor - Colégio Pedro II | 05/2017 - 12/2017
-- Scientific Initiation - Faperj | 09/2019 - 07/2020
-- Scientific Initiation - CNPq | 03/2022 - 08/2022
-- Software Residency - IUUL | 01/2024 - 12/2024
-- Backend Developer Interniship - Lions pre-owned s.a | 08-2024 - 12-2024
-- Software Developer - Tecgraf/PUC-Rio | 12-2024 - Currently
+- Programming Tutor \ Colégio Pedro II \ 05/2017 - 12/2017
+- Scientific Initiation \ Faperj \ 09/2019 - 07/2020
+- Scientific Initiation \ CNPq \ 03/2022 - 08/2022
+- Software Residency \ IUUL \ 01/2024 - 12/2024
+- Backend Developer Interniship \ Lions pre-owned s.a \ 08-2024 - 12-2024
+- Software Developer \ Tecgraf/PUC-Rio \ 12-2024 - Currently
 
 ### Competitions
 
