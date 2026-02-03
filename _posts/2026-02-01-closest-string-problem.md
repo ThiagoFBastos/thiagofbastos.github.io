@@ -28,7 +28,7 @@ There are four heuristics for initial solution that are used by the metaheuristi
 - Simulated Annealing
 - Parallel Simulated Annealing
 - ILS (Iterated Local Search) using as local search the simulated annealing
-- Generic Algorithm
+- Genetic Algorithm
 
 ### Project
 
