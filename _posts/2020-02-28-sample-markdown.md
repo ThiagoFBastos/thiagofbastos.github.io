@@ -4,15 +4,13 @@ title: Closest String Problem
 subtitle: Final project of my Computer Science Graduation
 gh-repo: ThiagoFBastos/Closest-String-Problem
 gh-badge: [star, fork, follow]
-tags: [test]
+tags: [np-hard, algorithms, closest string problem, heuristics]
 comments: true
 mathjax: true
 author: Thiago Felipe Bastos da Silva
 ---
 
-### Purpose
-
-The Closest String Problem has many applications in bioinformatics and your target is to find a string t, given a set S with strings of same length, such that maximum Hamming Distance between t and all $S_i$, $1 \le i \le |S|$, be minimum. Since it belongs the np-hard class is no known a polynomial algorithm in order to solve it. Therefore, to get a solution uses some exact method with restriction or uses some heuristic that not guarantees optimality but the answer is obtained in a reasonable time. Therefore, this work proposes to create algorithms based on metaheuristics already known as: Simulated Annealing, Iterated Local Search and Genetic Algorithm and compare the results with what has already been obtained in the literature.
+The Closest String Problem has many applications in bioinformatics and your target is to find a string t, given a set S with strings of same length, such that maximum Hamming Distance between t and all $S_i$, $1 \le i \le \|S\|$, be minimum. Since it belongs the np-hard class is no known a polynomial algorithm in order to solve it. Therefore, to get a solution uses some exact method with restriction or uses some heuristic that not guarantees optimality but the answer is obtained in a reasonable time. Therefore, this work proposes to create algorithms based on metaheuristics already known as: Simulated Annealing, Iterated Local Search and Genetic Algorithm and compare the results with what has already been obtained in the literature.
 
 ### Definition of the problem
 Let $S$ be a sequence of strings ${ S_1, S_2, S_3, \ldots, S_n }$ with $|S_i| = m$, whose characters belong to an alphabet $\Sigma$. The Closest String Problem consists of finding a string $T$, also of length $m$, such that the maximum Hamming distance between $T$ and all strings in the input set $S$ is minimized, i.e.,  $T$ = $argmin_T$ ${max_{1 \le i \le n}{d(S_i, T)}}$.
