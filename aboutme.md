@@ -8,11 +8,11 @@ My name is <b>Thiago Felipe Bastos da Silva.</b>
 
 Somethings that you can know about me:
 
-- I'm a <ins>Software Developer</ins>.
+- I'm a <ins>Software Developer</ins> 🧑🏽‍💻.
 - I have experience programming in <b>C</b>, <b>C++</b>, <b>C#</b>, <b>JavaScript</b>, <b>Python</b>, and <b>Rust</b>.
 - I love anime, and one of my favorites is called Code Geass.
-- I play drums
-- I'm a big fan of Competitive Programming
+- I play drums 🥁.
+- I'm a big fan of Competitive Programming 🤓.
 
 ### My story
 
@@ -40,5 +40,5 @@ Currently, I work as a C++ Developer at Tecgraf/PUC-Rio, working on a wide range
 
 ### Competitions
 
-- I regularly participate in competitive programming contests on platforms such as Codeforces, AtCoder, and CodeChef. On Codeforces, I am a Candidate Master (2067 rating, peak 2164 — Master). On AtCoder, I have a 1992 rating (peak 1998), and on CodeChef, I have a 2123 rating.
+- I regularly participate in competitive programming contests on platforms such as Codeforces, AtCoder, and CodeChef. On Codeforces, I am a Candidate Master (2067 rating, peak 2164 - Master). On AtCoder, I have a 1992 rating (peak 1998), and on CodeChef, I have a 2123 rating.
 - I placed 3rd in Rio de Janeiro and 29th nationwide in the first phase of the SBC Programming Marathon (ICPC Regionals), and later achieved 13th place in the second phase (Brazil Finals).
