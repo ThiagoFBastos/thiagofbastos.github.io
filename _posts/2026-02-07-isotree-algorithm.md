@@ -5,12 +5,14 @@ subtitle: An algorithm for finding all non-isomorphic trees of a given size.
 tags: [algorithms, backtracking, graphs, parallel algorithms]
 author: Thiago Felipe Bastos da Silva
 mathjax: true
+gh-repo: ThiagoFBastos/isotree
+gh-badge: [star, fork, follow]
 ---
 
 After using the Prüfer code in my Scientific Initiation project to find all non-isomorphic trees of a given size, I came up with an idea to improve this algorithm, since it was slow and I could not generate the trees-or even count them for larger values of n. Therefore, I proposed a backtracking algorithm with pruning to reduce the computation time.
-<br><br>
+
 This backtracking algorithm is a constructive approach that builds the tree level by level while enforcing specific rules to reduce the search space. Moreover, to avoid generating duplicate trees, we used a hash table from the GNU C++ library, gp_hash_table, which is well known in the competitive programming community for being faster than std::unordered_set.
-<br><br>
+
 One might question whether the algorithm could consume excessive memory, given that the number of trees grows rapidly and the method requires $O(n)$ space. However, this issue is mitigated by the fact that the trees considered are relatively small (since the number of non-isomorphic trees increases very quickly with n), allowing us to encode and store the trees efficiently as integers.
 
 ### Pruning rules used by the algorithm
