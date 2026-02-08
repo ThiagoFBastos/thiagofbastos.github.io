@@ -25,10 +25,10 @@ There are four heuristics for initial solution that are used by the metaheuristi
 
 ### Metaheuristics
 
-- Simulated Annealing
+- [Simulated Annealing](https://mathworld.wolfram.com/SimulatedAnnealing.html)
 - Parallel Simulated Annealing
-- ILS (Iterated Local Search) using as local search the simulated annealing
-- Genetic Algorithm
+- [ILS](https://algorithmafternoon.com/stochastic/iterated_local_search/) (Iterated Local Search) using as local search the simulated annealing
+- [Genetic Algorithm](https://www.mathworks.com/help/gads/what-is-the-genetic-algorithm.html)
 
 ### Project
 
