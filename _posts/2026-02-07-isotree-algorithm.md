@@ -17,7 +17,7 @@ One might question whether the algorithm could consume excessive memory, given t
 
 ### Pruning rules used by the algorithm
 1. The tree is rooted.
-2. Vertices closer to the root have smaller labels than vertices farther from it.
+2. Vertices closer to the root have greater labels than vertices farther from it.
 3. For two vertices at the same level, the vertex with the larger label must have all its children labeled with values greater than those of the other vertex.
 4. For two sibling vertices, the one with the larger label must have greater height.
 5. The root belongs to the center of the tree; therefore, the height difference between the two tallest subtrees is at most one.

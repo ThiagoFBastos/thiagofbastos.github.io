@@ -17,11 +17,11 @@ Currently, I have paused my participation in online contests, but I still solve 
 ### Projects about Competitive Programming
 - [competitive-programming](https://github.com/ThiagoFBastos/competitive-programming)
     <br>
-    a repository where i store some solutions of problems that i solved
+    A repository where I store solutions to problems I have solved.
 - [Competitive-Programming-C-Plus-Plus-Library](https://github.com/ThiagoFBastos/Competitive-Programming-C-Plus-Plus-Library)
     <br>
-    a C++ library of Competitive Programming to use for solve problems on online platforms
+    A C++ library for Competitive Programming to solve problems on online platforms.
 - [Competitive-Programming-Rust-Library](https://github.com/ThiagoFBastos/Competitive-Programming-Rust-Library)
     <br>
-    a Rust library of Competitive Programming to use for solve problems on online platforms
+    A Rust library for Competitive Programming to solve problems on online platforms.
 
