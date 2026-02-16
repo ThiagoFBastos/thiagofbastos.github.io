@@ -34,20 +34,24 @@ using u64 = unsigned long long;
 using ld = long double;
 using ii = pair<int, int>;
 
-const int N = 1e4 + 100;
+constexpr int N = 1e4 + 100;
 
 struct FN {
     i64 a, b;
-    i64 evaluate(i64 x) {
+
+    i64 evaluate(i64 x) const {
         return a * x + b;
     }
-    double intersection(FN other) {
+
+    double intersection(const FN& other) const {
         return (b - other.b) / double(other.a - a);
     }
-    bool parallel(FN other) {
+
+    bool parallel(const FN& other) const {
         return a == other.a;
     }
-    bool operator<(FN other) {
+
+    bool operator<(const FN& other) const {
         return a < other.a || (a == other.a && b < other.b);
     }
 };
@@ -58,20 +62,20 @@ FN f[N];
 struct CHTMergeSortTree {
     int n;
 
-    bool overshadow(FN a, FN b, FN c) {
+    bool overshadow(const FN& a, const FN& b, const FN& c) const {
         return a.parallel(b) || a.intersection(b) < b.intersection(c);
     }
 
-    void merge(vector<FN>& dest, vector<FN>& left, vector<FN>& right) {
+    void merge(vector<FN>& dest, const vector<FN>& left, const vector<FN>& right) {
         int n = left.size(), m = right.size();
         int i = n - 1, j = m - 1, k = 0;
 
         dest.resize(n + m);
 
         while(i >= 0 && j >= 0) {
-            FN nw = left[i] < right[j] ? left[i--] : right[j--];
+            const auto& nw = left[i] < right[j] ? left[i--] : right[j--];
             while(k >= 2 && overshadow(nw, dest[k - 1], dest[k - 2])) --k;
-            dest[k++] = nw;	
+            dest[k++] = nw;
         }
 
         while(i >= 0) {
@@ -90,7 +94,7 @@ struct CHTMergeSortTree {
 
     void build(FN f[], int l, int r, int p = 1) {
         if(l == r) { st[p] = {f[l]}; return;}
-        int m = (l + r) / 2;
+        int m = (l + r) >> 1;
         build(f, l, m, 2 * p);
         build(f, m + 1, r, 2 * p + 1);
         merge(st[p], st[2 * p], st[2 * p + 1]);
@@ -102,13 +106,13 @@ struct CHTMergeSortTree {
         else if(lo >= l && hi <= r) {
             auto& X = st[p];
             while((int)X.size() >= 2) {
-                FN l1 = X.back(), l2 = *(X.end() - 2);
+                const FN& l1 = X.back(), &l2 = *(X.end() - 2);
                 if(l1.evaluate(x) > l2.evaluate(x)) break;
                 X.pop_back();
             }
             return X.back().evaluate(x);
         }
-        int m = (lo + hi) / 2;
+        int m = (lo + hi) >> 1;
         i64 v1 = query(x, l, r, lo, m, 2 * p);
         i64 v2 = query(x, l, r, m + 1, hi, 2 * p + 1);
         return max(v1, v2);
