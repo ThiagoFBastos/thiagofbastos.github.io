@@ -72,3 +72,25 @@ int main(int argc, char* argv[]) {
 	return 0;
 }
 ```
+
+### The proof
+
+The purpose of the solution above is to count cycles with some nodes of permutation of $1, \ldots, n$, and then attach trees to the nodes of the cycles. For that, we find the values of the function $f(i, j)$ (this is the Stirling Number), where $i$ is the number of cycles and $j$ is the number of nodes. These values can be found using dynamic programming with the following transitions:
+
+$f(i, j) = ((j - 1) * f(i, j - 1) + f(i - 1, j - 1)) (mod 10^{9} + 7)$
+
+which means: given that we are adding the $j$-th node, it can be alone in a new cycle or can belong to one of the $i$ cycles; thus, it can have a direct edge to some of the $(j - 1)$ nodes.
+
+Now, we need to find the count of functional graph components, and some nodes do not belong to any cycle; thus, these nodes are in trees. For that, we use this formula:
+
+$dp(i) = (dp(i) + f(i, j) * \binom{n}{j} * n^{n - j}) mod (10^{9} + 7)$ $(\forall 1 \le j \le n)$
+
+We choose a subset of $j$ nodes from the $n$ nodes and, for the remaining nodes, we add an edge to some other node. However, there is a problem: this can lead to more components, which we do not want.
+
+Here we use the inclusion–exclusion principle to avoid repetitions that can appear in the last step. Therefore, if we compute the values of $dp(i)$ in descending order of $i$ and remove the repetitions for $j < i$, then at the current step $i$ the value is correct.
+
+With this formula we can remove the repetitions:
+
+$dp(j) = (dp(j) - dp(i) * \binom{i}{j}) (mod 10^{9} + 7)$
+
+We remove $dp(i) * \binom{i}{j}$ from $dp(j)$ because any subset of $j$ components among the $i$ components can appear in $dp(j)$.
