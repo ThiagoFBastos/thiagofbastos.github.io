@@ -36,40 +36,40 @@ const int N = 5e3 + 10, MOD = 1e9 + 7;
 int f[N][N], c[N][N], dp[N], pt[N];
  
 int main(int argc, char* argv[]) {
-	ios_base :: sync_with_stdio(false);
-	cin.tie(0);
+    ios_base :: sync_with_stdio(false);
+    cin.tie(0);
  
-	int n;
+    int n;
  
-	cin >> n;
+    cin >> n;
  
-	f[0][0] = c[0][0] = pt[0] = 1;
+    f[0][0] = c[0][0] = pt[0] = 1;
  
-	for(int i = 1; i <= n; ++i) pt[i] = (i64)n * pt[i - 1] % MOD;
+    for(int i = 1; i <= n; ++i) pt[i] = (i64)n * pt[i - 1] % MOD;
  
-	for(int i = 1; i <= n; ++i) {
-		c[i][0] = c[i][i] = 1;
-		for(int j = 1; j < i; ++j) {
-			c[i][j] = c[i - 1][j] + c[i - 1][j - 1];
-			if(c[i][j] >= MOD) c[i][j] -= MOD;
-		}
-		for(int j = 1; j <= n; ++j) 
-			f[i][j] = ((j - 1ll) * f[i][j - 1] + f[i - 1][j - 1]) % MOD;
-	}
+    for(int i = 1; i <= n; ++i) {
+        c[i][0] = c[i][i] = 1;
+        for(int j = 1; j < i; ++j) {
+            c[i][j] = c[i - 1][j] + c[i - 1][j - 1];
+            if(c[i][j] >= MOD) c[i][j] -= MOD;
+        }
+        for(int j = 1; j <= n; ++j) 
+            f[i][j] = ((j - 1ll) * f[i][j - 1] + f[i - 1][j - 1]) % MOD;
+    }
  
-	for(int i = n; i; --i)
-		for(int j = 1; j <= n; ++j) 
-			dp[i] = (dp[i] + (i64)f[i][j] * c[n][j] % MOD * pt[n - j]) % MOD;
+    for(int i = n; i; --i)
+        for(int j = 1; j <= n; ++j) 
+            dp[i] = (dp[i] + (i64)f[i][j] * c[n][j] % MOD * pt[n - j]) % MOD;
 	
-	for(int i = n; i; --i) {
-		dp[i] = (dp[i] + MOD) % MOD;
-		for(int j = i - 1; j; --j)
-			dp[j] = (dp[j] - (i64)dp[i] * c[i][j]) % MOD;
-	}
+    for(int i = n; i; --i) {
+        dp[i] = (dp[i] + MOD) % MOD;
+        for(int j = i - 1; j; --j)
+            dp[j] = (dp[j] - (i64)dp[i] * c[i][j]) % MOD;
+    }
  
-	for(int i = 1; i <= n; ++i) cout << dp[i] << '\n';
+    for(int i = 1; i <= n; ++i) cout << dp[i] << '\n';
  
-	return 0;
+    return 0;
 }
 ```
 
@@ -77,13 +77,14 @@ int main(int argc, char* argv[]) {
 
 The purpose of the solution above is to count cycles with some nodes of permutation of $1, \ldots, n$, and then attach trees to the nodes of the cycles. For that, we find the values of the function $f(i, j)$ (this is the Stirling Number), where $i$ is the number of cycles and $j$ is the number of nodes. These values can be found using dynamic programming with the following transitions:
 
-$f(i, j) = ((j - 1) * f(i, j - 1) + f(i - 1, j - 1)) (mod 10^{9} + 7)$
+$f(0, 0) = 1\,(mod\,10^{9} + 7)$ <br>
+$f(i, j) = ((j - 1) * f(i, j - 1) + f(i - 1, j - 1)) (mod\,10^{9} + 7)$
 
 which means: given that we are adding the $j$-th node, it can be alone in a new cycle or can belong to one of the $i$ cycles; thus, it can have a direct edge to some of the $(j - 1)$ nodes.
 
 Now, we need to find the count of functional graph components, and some nodes do not belong to any cycle; thus, these nodes are in trees. For that, we use this formula:
 
-$dp(i) = (dp(i) + f(i, j) * \binom{n}{j} * n^{n - j}) mod (10^{9} + 7)$ $(\forall 1 \le j \le n)$
+$dp(i) = (dp(i) + f(i, j) * \binom{n}{j} * n^{n - j}) (mod\,10^{9} + 7)$ $(\forall\,1 \le j \le n)$
 
 We choose a subset of $j$ nodes from the $n$ nodes and, for the remaining nodes, we add an edge to some other node. However, there is a problem: this can lead to more components, which we do not want.
 
@@ -91,6 +92,6 @@ Here we use the inclusion–exclusion principle to avoid repetitions that can ap
 
 With this formula we can remove the repetitions:
 
-$dp(j) = (dp(j) - dp(i) * \binom{i}{j}) (mod 10^{9} + 7)$
+$dp(j) = (dp(j) - dp(i) * \binom{i}{j})\,(mod\,10^{9} + 7)$
 
 We remove $dp(i) * \binom{i}{j}$ from $dp(j)$ because any subset of $j$ components among the $i$ components can appear in $dp(j)$.
