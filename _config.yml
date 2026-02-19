@@ -23,12 +23,16 @@ navbar-links:
   About Me: "aboutme"
   Resources:
     - Linkedin: "https://www.linkedin.com/in/thiago-bastos-845a691a6/"
+    - Lattes: "http://lattes.cnpq.br/6326966334602358" 
     - Codeforces: "https://codeforces.com/profile/thiago_bastos/"
     - Atcoder: "https://atcoder.jp/users/thiago_bastos/"
     - Codechef: "https://www.codechef.com/users/far_from_tle/"
     - Uva Online Judge: "https://uhunt.onlinejudge.org/id/1023716/"
     - Leetcode: "https://leetcode.com/u/thiago_bastos/"
     - Codewars: "https://www.codewars.com/users/thiago_bastos"
+    - Baekjoon: "https://www.acmicpc.net/user/thiago_bastos"
+    - Oj.uz: "https://oj.uz/profile/thiago_bastos"
+    - Try Hack Me: "https://tryhackme.com/p/thiagofbastos"
   Author's home: "https://thiagofbastos.github.io/"
 
 ################
