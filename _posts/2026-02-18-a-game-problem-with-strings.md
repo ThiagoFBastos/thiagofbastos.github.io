@@ -24,7 +24,7 @@ using u64 = unsigned long long;
 using ld = long double;
 using ii = pair<int, int>;
 
-const int K = 10;
+constexpr int K = 10;
 
 struct Vertex {
     int next[K];
@@ -34,37 +34,40 @@ struct Vertex {
     bool leaf;
     char ch;
     int next_leaf;
-	
-    Vertex(int p, char ch = '$') : par {p}, ch {ch} {
-        link = 0;
-        leaf = false;
-        next_leaf = -1;
+    
+    Vertex(int p, char ch = '$'): 
+		par {p}, 
+		link {},
+		leaf {},
+        ch {ch},
+		next_leaf {-1} 
+	{
         memset(next, -1, sizeof next);
         memset(go, -1, sizeof go);
-	}
+    }
 };
 
 struct Aho {
     vector<Vertex> st;
 
-    Aho() {}
+    Aho() = default;
 
-    Aho(vector<string>& words) {
-        st.push_back(Vertex(0));
+    Aho(const vector<string>& words) {
+        st.emplace_back(0);
         st.back().next_leaf = 0;
-        for(auto& s : words) push(s);
+        for(const auto& s : words) push(s);
         bfs();
     }
 
-    void push(string& s) {
+    void push(const string& s) {
         int no = 0;
         for(char ch : s) {
-            ch -= 'a';
-            if(st[no].next[ch] == -1) {
-                st[no].next[ch] = st.size();
-                st.emplace_back(no, ch);
-            }		
-            no = st[no].next[ch];
+            int pos = ch - 'a';
+            if(st[no].next[pos] == -1) {
+                st[no].next[pos] = st.size();
+                st.emplace_back(no, pos);
+            }
+            no = st[no].next[pos];
         }
         st[no].leaf = true;
     }
@@ -78,16 +81,16 @@ struct Aho {
         while(!q.empty()) {
             int from = q.front();
             q.pop();
-			
-            Vertex& no = st[from];
+            
+            auto& no = st[from];
             char e = no.ch;
             int par = no.par;
 
-            if(par) {	
+            if(par) {    
                 for(int v = st[no.par].link; v >= 0; v = st[v].link) {
-                    Vertex& n = st[v];
-                    if(n.next[e] != -1) {
-                        no.link = n.next[e];
+                    const auto& n = st[v];
+                    if(n.next[(int)e] != -1) {
+                        no.link = n.next[(int)e];
                         break;
                     }
                 }
@@ -101,8 +104,8 @@ struct Aho {
         }
     }
 
-    int go(int no, char ch) {
-        Vertex& v = st[no];
+    int go(int no, int ch) {
+        auto& v = st[no];
         if(v.go[ch] != -1) return v.go[ch];
         return v.go[ch] = v.next[ch] != -1 ? v.next[ch] : go(v.link, ch);
     }
@@ -113,14 +116,14 @@ struct Aho {
         return v.next_leaf = st[v.link].leaf ? v.link : nextLeaf(v.link);
     }
 
-    int countNode() {
+    int countNodes() const noexcept {
         return st.size();
     }
 };
 
 
-const int N = 51;
-const int M = 1e5 + 100;
+constexpr int N = 51;
+constexpr int M = 1e5 + 100;
 
 char g[N][M];
 int D, L, S;
@@ -146,9 +149,9 @@ void solve() {
 
     aho = Aho(adj);
 
-    int nos = aho.countNode(), XOR = 0;
+    int nos = aho.countNodes(), XOR = 0;
 
-    for(int i = 0; i <= 50; ++i)
+    for(int i = 0; i < N; ++i)
         for(int j = 0; j < nos; ++j)
             g[i][j] = aho.st[j].leaf || aho.nextLeaf(j) ? 0 : -1;
 
@@ -160,8 +163,8 @@ void solve() {
         string s;
         int f;
         cin >> s >> f;
-        int no = 0, gg = 0;
-        for(char ch : s) no = aho.go(no, ch - 'a');	
+        int no = 0;
+        for(char ch : s) no = aho.go(no, ch - 'a');    
         XOR ^= DP(f, no);
     }
 
@@ -169,12 +172,12 @@ void solve() {
 }
 
 int main() {
-	ios_base :: sync_with_stdio(false);
-	cin.tie(0);
-	int t = 1;
-	//cin >> t;
-	while(t--) solve();
-	return 0;
+    ios_base :: sync_with_stdio(false);
+    cin.tie(0);
+    int t = 1;
+    //cin >> t;
+    while(t--) solve();
+    return 0;
 }
 ```
 
