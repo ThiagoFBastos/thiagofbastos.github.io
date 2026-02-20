@@ -41,7 +41,7 @@ struct Vertex {
         leaf {},
         ch {ch},
         next_leaf {-1} 
-	{
+    {
         memset(next, -1, sizeof next);
         memset(go, -1, sizeof go);
     }
