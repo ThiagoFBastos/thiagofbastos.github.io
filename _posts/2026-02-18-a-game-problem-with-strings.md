@@ -36,11 +36,11 @@ struct Vertex {
     int next_leaf;
     
     Vertex(int p, char ch = '$'): 
-		par {p}, 
-		link {},
-		leaf {},
+        par {p}, 
+        link {},
+        leaf {},
         ch {ch},
-		next_leaf {-1} 
+        next_leaf {-1} 
 	{
         memset(next, -1, sizeof next);
         memset(go, -1, sizeof go);
