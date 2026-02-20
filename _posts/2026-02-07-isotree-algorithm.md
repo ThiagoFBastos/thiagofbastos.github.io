@@ -16,6 +16,13 @@ This backtracking algorithm is a constructive approach that builds the tree leve
 One might question whether the algorithm could consume excessive memory, given that the number of trees grows rapidly and the method requires $O(n)$ space. However, this issue is mitigated by the fact that the trees considered are relatively small (since the number of non-isomorphic trees increases very quickly with n), allowing us to encode and store the trees efficiently as integers.
 
 ### Pruning rules used by the algorithm
+
+Why do we need pruning? You might ask that.
+
+According to Cayley’s formula, there are $n^{n - 2}$ labeled trees of a given size $n$. Because of this, with a brute-force algorithm I couldn’t compute these trees in a reasonable amount of time for larger values of $n$.
+
+Consider small values of $n$; for example, when $n = 10$, there are $10^{8}$ labeled trees. This is a lot.
+
 1. The tree is rooted.
 2. Vertices closer to the root have greater labels than vertices farther from it.
 3. For two vertices at the same level, the vertex with the larger label must have all its children labeled with values greater than those of the other vertex.
