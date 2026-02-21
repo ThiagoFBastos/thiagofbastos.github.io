@@ -7,8 +7,8 @@ author: Thiago Felipe Bastos da Silva
 mathjax: true
 ---
 
-Today I'll talk about a trick that I learned in the Maratona de Programação Brasil group that I call the (x + y, x - y) trick.
-This trick rotates a 2D grid by 45° and enables you to answer queries involving Manhattan distances, because after applying this transformation to the points, you can perform queries using squares ${(x - d, y - d), (x + d, y + d)}$ whose points have a maximum distance of $d$ from the source point $(x, y)$.
+Today I'll talk about a trick that I learned in the Maratona de Programação Brasil group that I call the $(x + y, x - y)$ trick.
+This trick rotates a 2D grid by 45° and enables you to answer queries involving Manhattan distances, because after applying this transformation to the points, you can perform queries using squares $\{(x - d, y - d), (x + d, y + d)\}$ whose points have a maximum distance of $d$ from the source point $(x, y)$.
 To illustrate this, I'll show you how I solved a problem using that trick on [Beecrowd](https://judge.beecrowd.com/) with the problem [Coffee Central](https://judge.beecrowd.com/en/problems/view/2196), which is basically an application of this trick using a 2D prefix sum. In short, the problem asks you to find a point in the 2D grid that has, within a maximum distance $d$, the largest number of special points. So I used the trick together with a 2D prefix sum to count this number.
 
 ```c++
