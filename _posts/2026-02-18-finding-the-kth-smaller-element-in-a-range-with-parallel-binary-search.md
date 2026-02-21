@@ -215,3 +215,5 @@ The algorithm above has complexity of $O((n + q) \log^{2} n)$.
 
 To find the k-th smallest element in the given ranges, we use parallel binary search.
 To understand the proof, think about a single binary search. Then you may ask the following question: how do we find the k-th smallest element in a given range? The answer is very simple: if we sort the array in ascending order while keeping the original indices, we can use an auxiliary data structure (Fenwick Tree) that maintains the counts of the values and can return the number of values in a given range of the original array. With this, at a step of the binary search when we have $[l, r]$, we can determine whether the k-th element lies in the range at the time of the query.
+
+Here is the link of the submission: [Range Kth Smallest](https://judge.yosupo.jp/submission/345788)
