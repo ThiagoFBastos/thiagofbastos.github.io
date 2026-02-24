@@ -183,4 +183,8 @@ int main() {
 
 ### Proof
 
-Very soon
+This problem can be thought of as a Grundy game with many subgames, so we have to calculate the Grundy number for each string, and the complete game is just like a Nim game: we take the XOR of all Grundy numbers.
+
+For each string, we can determine its Grundy number because there is a DAG with states $(L, k)$, where $L$ is the length of the string and $k$ is the current node in the trie. From a state, we can add a character to the end of the string and move along the trie. Basically, we are playing a game in which we move to the next node in the directed tree, and we have some sink nodes that are losing states. Thus, we can calculate the Grundy number for a specific node using dynamic programming.
+
+The losing states are the leaves of the trie and the nodes to which we cannot add more characters.
