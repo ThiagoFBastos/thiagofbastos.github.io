@@ -101,8 +101,8 @@ int main() {
 
 For each $1 \le k \le n$, there are two cases:
 
-The first is when $a_i \leq b_i$: this case is very easy, since Monocarp can always kill the boss before Polycarp.
+The first is when $a_j \leq b_j$: this case is very easy, since Monocarp can always kill the boss before Polycarp.
 
-The second is when $a_i > b_i$. Thus, we have to check, for every $i \ge 1$, whether in the step that lies in the interval $(k(i - 1), ki]$, Monocarp can always kill the boss, while Polycarp would kill the boss in the next step that also lies in that interval. However, since Monocarp plays first, he can kill the boss before Polycarp.
+The second is when $a_j > b_j$. Thus, we have to check, for every $i \ge 1$, whether in the step that lies in the interval $(k(i - 1), ki]$, Monocarp can always kill the boss, while Polycarp would kill the boss in the next step that also lies in that interval. However, since Monocarp plays first, he can kill the boss before Polycarp.
 
 To check this property, we only need to verify whether the XOR of all numbers in that interval is 0 (each number appears twice in that interval).
