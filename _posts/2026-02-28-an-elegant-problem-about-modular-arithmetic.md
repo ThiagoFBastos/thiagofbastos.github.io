@@ -1,7 +1,7 @@
 ---
 layout: post
 title: An Elegant Problem About Modular Arithmetic
-subtitle: Solving the problem It's a Mod, Mod, Mod, Mod World from Kattis.
+subtitle: Solving the problem "It's a Mod, Mod, Mod, Mod World" from Kattis.
 tags: [algorithms, number theory, c++, modular arithmetic, recursion]
 author: Thiago Felipe Bastos da Silva
 mathjax: true
@@ -9,7 +9,7 @@ mathjax: true
 
 There is a great problem on [Kattis](https://open.kattis.com/) called [It's a Mod, Mod, Mod, Mod World](https://open.kattis.com/problems/itsamodmodmodmodworld) with a short statement: given $p$, $q$, and $n$, find $\sum_{i = 1}^{n} \left[ (pi) \bmod q \right]$.  
 
-The main idea behind the solution to this problem is to count, for each $1 \le i \le \left\lfloor \frac{pn}{q} \right\rfloor$, how many values $pj$, with $1 \le j \le n$, satisfy $pj \ge qi$, and then compute $\sum (pj - qi)$, which can be done recursively.
+The main idea behind the solution to this problem is to count, for each $1 \le i \le \left\lfloor \frac{pn}{q} \right\rfloor$, Which values $pj$, with $1 \le j \le n$, satisfy $pj \ge qi$, and then compute $\sum (pj - qi)$, which can be done recursively.
 
 ### The algorithm
 
