@@ -9,7 +9,7 @@ mathjax: true
 
 There is a great problem on [Kattis](https://open.kattis.com/) called [It's a Mod, Mod, Mod, Mod World](https://open.kattis.com/problems/itsamodmodmodmodworld) with a short statement: given $p$, $q$, and $n$, find $\sum_{i = 1}^{n} \left[ (pi) \bmod q \right]$.  
 
-The main idea behind the solution to this problem is to count, for each $1 \le i \le \left\lfloor \frac{pn}{q} \right\rfloor$, which values $pj$, with $1 \le j \le n$, satisfy $pj \ge qi$, and then compute $\sum (pj - qi)$, which can be done recursively.
+The main idea behind the solution to this problem is to count, for each $1 \le i \le \left\lfloor \frac{pn}{q} \right\rfloor$, which values $pj$, with $1 \le j \le n$, satisfy $pj \ge qi$, and then compute $\sum (pj - q)$, which can be done recursively.
 
 ### The algorithm
 
