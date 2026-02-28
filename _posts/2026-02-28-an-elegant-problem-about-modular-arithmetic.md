@@ -1,0 +1,74 @@
+---
+layout: post
+title: An Elegant Problem About Modular Arithmetic
+subtitle: Solving the problem It's a Mod, Mod, Mod, Mod World from Kattis.
+tags: [algorithms, number theory, c++, modular arithmetic, recursion]
+author: Thiago Felipe Bastos da Silva
+mathjax: true
+---
+
+There is a great problem on [Kattis](https://open.kattis.com/) called [It's a Mod, Mod, Mod, Mod World](https://open.kattis.com/problems/itsamodmodmodmodworld) with a short statement: given $p$, $q$, and $n$, find $\sum_{i = 1}^{n} \left[ (pi) \bmod q \right]$.  
+
+The main idea behind the solution to this problem is to count, for each $1 \le i \le \left\lfloor \frac{pn}{q} \right\rfloor$, how many values $pj$, with $1 \le j \le n$, satisfy $pj \ge qi$, and then compute $\sum (pj - qi)$, which can be done recursively.
+
+### The algorithm
+
+```c++
+#include "bits/stdc++.h"
+
+using namespace std;
+
+#define INF 1000000000
+#define INFLL 1000000000000000000ll
+#define EPS 1e-9
+#define all(x) x.begin(),x.end()
+#define rall(x) x.rbegin(),x.rend()
+#define pb push_back
+#define fi first
+#define sc second
+
+using i64 = long long;
+using u64 = unsigned long long;
+using ld = long double;
+using ii = pair<int, int>;
+using i128 = __int128;
+
+i64 linearSum(int l, int r) {
+    return (r - l + 1ll) * (r + l) / 2;
+}
+
+i64 f(int p, int n, int q) {
+    p %= q;
+    if(!n || !p) return 0;
+    i64 sum = linearSum(0, q - 1) * (n / q);
+    n %= q;
+    int m = (i64)p * n / q;
+    i64 mod = (i64)m * n - (q * linearSum(1, m) - f(q % p, m, p)) / p;
+    sum += p * linearSum(1, n) - mod * q;
+    return sum;
+}
+
+i64 g(int p, int n, int q) {
+    int g = gcd(p, q);
+    return f(p / g, n, q / g) * g;
+}
+
+void solve() {
+    int p, q, n;
+    cin >> p >> q >> n;
+    cout << g(p, n, q) << '\n';
+}
+
+int main() {
+    ios_base :: sync_with_stdio(false);
+    cin.tie(0);
+    int t = 1;
+    cin >> t;
+    while(t--) solve();
+    return 0;
+}
+```
+
+### Proof
+
+Very soon.
