@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A nice problem involving strings and game theory.
+title: A Nice Problem Involving Strings and Game Theory.
 subtitle: How I solved the problem using Aho–Corasick and Grundy numbers.
 tags: [algorithms, strings, c++, grundy numbers, aho cosarick, dynamic programming]
 author: Thiago Felipe Bastos da Silva

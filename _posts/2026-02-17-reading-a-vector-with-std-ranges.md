@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A smarter way to read STL containers in C++.
+title: A Smarter Way to Read STL Containers in C++.
 subtitle: How std::ranges makes it easier to read collections.
 tags: [programming, c++]
 author: Thiago Felipe Bastos da Silva

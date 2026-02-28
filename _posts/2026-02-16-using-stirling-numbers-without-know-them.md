@@ -1,6 +1,6 @@
 ---
 layout: post
-title: When i used Stirling Numbers without knowing them.
+title: When I Used Stirling Numbers Without Knowing Them.
 subtitle: The day I solved a combinatorial graph problem.
 tags: [algorithms, dynamic programming, combinatorics, graphs]
 author: Thiago Felipe Bastos da Silva

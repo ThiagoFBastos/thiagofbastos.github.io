@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Solving a problem with XOR hashing
+title: Solving a Problem with XOR Hashing
 subtitle: How I solved a problem from the Educational Codeforces Round 141.
 tags: [algorithms, XOR hashing, c++]
 author: Thiago Felipe Bastos da Silva

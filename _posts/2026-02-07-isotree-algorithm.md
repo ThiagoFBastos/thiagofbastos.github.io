@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Isotree
-subtitle: An algorithm for finding all non-isomorphic trees of a given size.
+subtitle: An Algorithm for Finding All Non-Isomorphic Trees of a Given Size.
 tags: [algorithms, backtracking, graphs, parallel algorithms]
 author: Thiago Felipe Bastos da Silva
 mathjax: true
