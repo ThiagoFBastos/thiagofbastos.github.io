@@ -87,3 +87,15 @@ int main() {
     return 0;
 }
 ```
+
+### Why It Works?
+
+This problem can be solved using dynamic programming. Let's see how we can do it.
+
+We define the DP state as $dp(v, i)$, where $v$ is a vertex and $i$ is the depth of the deepest vertex in its subtree. Furthermore, the transitions are obtained by merging the values of the children's subtrees, ensuring that the sum of the distances doesn't exceed $k$.
+
+When we compute the resulting value from two $DP$ states, the resulting state keeps the maximum depth between them. If a child subtree doesn't care, we remove that subtree and add its size to the answer.
+
+Since we always pick a vertex that belongs to the diameter path of the tree, the value computed for a specific subtree is correct, because we effectively consider the two split paths.
+
+The answer is simply the minimum over the $DP$ value of a chosen subtree plus the number of remaining vertices of the tree.
