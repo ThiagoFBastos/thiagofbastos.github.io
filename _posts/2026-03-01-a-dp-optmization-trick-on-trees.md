@@ -7,7 +7,7 @@ author: Thiago Felipe Bastos da Silva
 mathjax: true
 ---
 
-There is a useful optimization trick involving DP on trees that I would like to discuss. It was detailed in the comments of this [Codeforces](https://codeforces.com/) [blog](https://codeforces.com/blog/entry/69888?locale=en). In short, you can define a DP over the vertices of a tree and compute its value for each $v$-subtree by combining the children of that vertex, where the DP state is a number that cannot exceed the size of the subtree.
+There is a useful optimization trick involving DP on trees that I would like to discuss. It was detailed in the comments of this [Codeforces blog](https://codeforces.com/blog/entry/69888?locale=en). In short, you can define a DP over the vertices of a tree and compute its value for each $v$-subtree by combining the children of that vertex, where the DP state is a number that cannot exceed the size of the subtree.
 
 To illustrate this idea, I will present the problem [C - Shorten Diameter](https://atcoder.jp/contests/agc001/tasks/agc001_c), which asks you to find the largest subtree whose diameter is not greater than $k$. Equivalently, you must remove the minimum possible number of vertices from the tree. This problem can be solved using a DP with states $(v, d)$, where $v$ is a vertex and $d$ represents the depth of the deepest vertex in the $v$-subtree. Furthermore, its value corresponds to the number of removed vertices, and the transitions for a vertex $v$ ensure that the sum of distances does not exceed $k$.
 
