@@ -2,7 +2,7 @@
 layout: post
 title: Solving a Problem with XOR Hashing
 subtitle: How I solved a problem from the Educational Codeforces Round 141.
-tags: [algorithms, XOR hashing, c++]
+tags: [algorithms, XOR hashing, randomized algorithms, c++]
 author: Thiago Felipe Bastos da Silva
 mathjax: true
 ---
@@ -97,7 +97,7 @@ int main() {
 }
 ```
 
-### Proof
+### Why It Works?
 
 For each $1 \le k \le n$, there are two cases:
 

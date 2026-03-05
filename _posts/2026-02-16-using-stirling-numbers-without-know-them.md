@@ -73,7 +73,7 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-### The proof
+### Why It Works?
 
 The purpose of the solution above is to count cycles with some nodes of permutation of $1, \ldots, n$, and then attach trees to the nodes of the cycles. For that, we find the values of the function $f(i, j)$ (this is the Stirling Number), where $i$ is the number of cycles and $j$ is the number of nodes. These values can be found using dynamic programming with the following transitions:
 

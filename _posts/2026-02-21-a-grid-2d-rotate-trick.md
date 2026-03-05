@@ -84,7 +84,3 @@ int main() {
     return 0;
 }
 ```
-
-### Proof
-
-Read the introduction

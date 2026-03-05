@@ -69,6 +69,6 @@ int main() {
 }
 ```
 
-### Proof
+### Why It Works?
 
 Very soon.

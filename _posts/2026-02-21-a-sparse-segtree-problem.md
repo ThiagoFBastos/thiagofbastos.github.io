@@ -109,7 +109,7 @@ int main() {
 }
 ```
 
-### Proof
+### Why It Works?
 
 The algorithm is very simple: you only create a node when you need it, the rest is just a Lazy Segment Tree implementation.
 

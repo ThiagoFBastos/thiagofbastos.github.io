@@ -181,7 +181,7 @@ int main() {
 }
 ```
 
-### Proof
+### Why It Works?
 
 This problem can be thought of as a Grundy game with many subgames, so we have to calculate the Grundy number for each string, and the complete game is just like a Nim game: we take the XOR of all Grundy numbers.
 
