@@ -2,7 +2,7 @@
 layout: post
 title: Solving a Graph Problem with Mo's Algorithm on Trees
 subtitle: How I solved the "Dating" problem from Bubble Cup 2017.
-tags: [algorithms, graphs, trees, sqrt decomposition, Mo's Algorithm, c++]
+tags: [algorithms, graphs, trees, sqrt decomposition, Mo's Algorithm, c++, dfs, binary lifting, lca]
 author: Thiago Felipe Bastos da Silva
 mathjax: true
 ---
