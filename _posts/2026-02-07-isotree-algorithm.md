@@ -2,7 +2,7 @@
 layout: post
 title: Isotree
 subtitle: An Algorithm for Finding All Non-Isomorphic Trees of a Given Size.
-tags: [algorithms, backtracking, graphs, parallel algorithms, c++]
+tags: [algorithms, backtracking, graphs, parallel algorithms, c++, trees, ahu, isomorphism]
 author: Thiago Felipe Bastos da Silva
 mathjax: true
 gh-repo: ThiagoFBastos/isotree
