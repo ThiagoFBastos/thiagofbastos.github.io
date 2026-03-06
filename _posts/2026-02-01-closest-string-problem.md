@@ -4,7 +4,7 @@ title: Closest String Problem
 subtitle: Final project of my Computer Science Graduation
 gh-repo: ThiagoFBastos/Closest-String-Problem
 gh-badge: [star, fork, follow]
-tags: [np-hard, algorithms, closest string problem, heuristics, c++]
+tags: [np-hard, algorithms, closest string problem, heuristics, c++, strings, simulated annealing, iterated local search, genetic algorithm]
 comments: true
 mathjax: true
 author: Thiago Felipe Bastos da Silva
