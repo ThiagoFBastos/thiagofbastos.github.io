@@ -99,3 +99,5 @@ When we compute the resulting value from two $DP$ states, the resulting state ke
 Since we always pick a vertex that belongs to the diameter path of the tree, the value computed for a specific subtree is correct, because we effectively consider the two split paths.
 
 The answer is simply the minimum over the $DP$ value of a chosen subtree plus the number of remaining vertices of the tree.
+
+Link of the submission: [solution](https://atcoder.jp/contests/agc001/submissions/39167207)
