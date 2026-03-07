@@ -56,7 +56,7 @@ Currently, I have paused my participation in online contests, but I still solve 
 
 - [Usaco Guide](https://usaco.guide/)
 - [Codeforces Blogs](https://codeforces.com/catalog)
-- [Competitive Programming Handbook Book](https://cses.fi/book/book.pdf)
+- [Competitive Programming Handbook](https://cses.fi/book/book.pdf)
 - [Competitive Programming 3](https://www.amazon.com.br/Competitive-Programming-3-Steven-Halim/dp/B07113CNW4)
 - [CP Algorithms](https://cp-algorithms.com/index.html)
 - [TopCoder Blogs](https://www.topcoder.com/thrive/tracks?track=Competitive%20Programming)
