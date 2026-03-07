@@ -2,7 +2,7 @@
 layout: post
 title: A DP Optimization Trick on Trees
 subtitle: Efficient Subtree Merging in Dynamic Programming on Trees.
-tags: [algorithms, tree, c++, dynamic programming, dfs]
+tags: [algorithms, trees, c++, dynamic programming, dfs]
 author: Thiago Felipe Bastos da Silva
 mathjax: true
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: SegTree of Convex Hull Trick
 subtitle: A data structure for solving Convex Hull Trick problems on intervals.
-tags: [algorithms, data structures, trees, geometry, convex hull trick, segment tree, c++, dynamic programming]
+tags: [algorithms, data structures, trees, geometry, convex hull trick, segment trees, c++, dynamic programming]
 author: Thiago Felipe Bastos da Silva
 mathjax: true
 ---
