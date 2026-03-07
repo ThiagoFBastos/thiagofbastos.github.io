@@ -7,7 +7,7 @@ author: Thiago Felipe Bastos da Silva
 mathjax: true
 ---
 
-There is a class of graphs called [Perfect Graphs](https://mathworld.wolfram.com/PerfectGraph.html) for which some problems can be solved in polynomial time, such as: maximum clique, maximum independent set, and coloring. One such graph is the [Split Graph](https://mathworld.wolfram.com/SplitGraph.html), which can be checked by a simple $O(|V| \log |V|)$ algorithm, by simply checking if there exists at least one $m$ such that $\sum_{i = 1}^{m} d_i = m(m - 1) + \sum_{i = m + 1}^{n} d_i$, where $d_1 \le ... \le d_n$. 
+There is a class of graphs called [Perfect Graphs](https://mathworld.wolfram.com/PerfectGraph.html) for which some problems can be solved in polynomial time, such as: maximum clique, maximum independent set, and coloring. One such graph is the [Split Graph](https://mathworld.wolfram.com/SplitGraph.html), which can be checked by a simple $O(\|V\| \log \|V\|)$ algorithm, by simply checking if there exists at least one $m$ such that $\sum_{i = 1}^{m} d_i = m(m - 1) + \sum_{i = m + 1}^{n} d_i$, where $d_1 \ge ... \ge d_n$.
 
 You can solve a problem that involves this graph subclass, because there is a problem on [Beecrowd](https://judge.beecrowd.com) called [Justice League](https://judge.beecrowd.com/pt/problems/view/1417) from the ACM/ICPC South America Contest 2007.
 
