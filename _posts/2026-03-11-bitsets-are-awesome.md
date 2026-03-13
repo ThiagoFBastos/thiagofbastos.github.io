@@ -112,6 +112,6 @@ int main() {
 
 Some resources that I used in the algorithm above that you might not know:
 
-- #pragma GCC target("popcnt") : this is a way to give some arguments to the GCC compiler inside the code, and this is about an instruction called **popcnt** that is used to count bits.
+- #pragma GCC target("popcnt") : this is a way to give some arguments to the GCC compiler inside the code, and this is about an instruction called **popcnt** that is used to count bits. This optmization speed up the time 1.76x. You can learn more [here](https://codeforces.com/blog/entry/66279).
 
 - _Find_first() : this is a GCC extension method for bitsets; you can learn more [here](https://codeforces.com/blog/entry/43718)
