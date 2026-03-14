@@ -6,13 +6,14 @@ subtitle: Why you should know me?
 
 Hi, my name is <b>Thiago Felipe Bastos da Silva 🖖.</b>
 
-Somethings that you can know about me:
+### Quick Facts
 
-- I'm a <ins>Software Developer</ins> 🧑🏽‍💻.
+- I'm a <ins>Software Developer</ins> 🧑🏽‍💻 focused on algorithms and competitive programming.
 - I have experience programming in <b>C</b>, <b>C++</b>, <b>C#</b>, <b>JavaScript</b>, <b>Python</b>, and <b>Rust</b>.
 - I love anime, and one of my favorites is called Code Geass.
 - I play drums 🥁.
 - I'm a big fan of Competitive Programming 🤓.
+- My favorite topics in Competitive Programming are: graphs, dynamic programming and combinatorics.
 
 ### My story 📖
 
