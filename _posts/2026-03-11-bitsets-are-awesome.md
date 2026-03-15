@@ -8,10 +8,13 @@ mathjax: true
 ---
 
 Today I'll talk about a standard C++ data structure that is amazing: the [bitsets](https://en.cppreference.com/w/cpp/utility/bitset.html). They can handle binary operations such as left shift (<<), right shift (>>), and (&), or (|), and xor (^), and they can have a fixed number of bits.
+
 Now you may ask me which types of problems we can solve with them, and I answer you: there are a lot, but I'll focus only on sets and the operations with them like unions and intersections.
+
 Let's see a problem to understand it better. This problem from [AtCoder](https://atcoder.jp/) called [Ex - Directed Graph and Query](https://atcoder.jp/contests/abc287/tasks/abc287_h) seems to be interesting.
 The core of this problem is: given a directed graph with $N$ vertices labeled with numbers from 1 to $N$ and given $Q$ queries, answer, for each query, what's the minimum possible maximum index over a path, if we choose the best path.
 How can we answer that when $N \le 2000$, $M \le N(N - 1)$ and $Q \le 10^{4}$ in at most 4.5 s?
+
 I could solve this problem thinking that I can solve each query $(s_i, t_i)$ by iterating over the vertex numbers in ascending order and keeping two sets: a **safe** set, which contains the vertices that I know are reachable from $s_i$, and another **unsafe** set, which contains the visited vertices that I don't know if are reachable from $s_i$. Furthermore, when I visit a vertex $v$ reachable from $s_i$, I run a BFS from it going to the vertices that are in **unsafe** and move them to the **safe** set, and I already know that the answer for these vertices is just $max(s_i, v)$, since $v$ is the maximum index that was visited (not including $s_i$).
 The complexity of the algorithm below is $O(N^{2} + NQ)$, which is better than the editorial, which is $O(N^3 + NQ)$.
 
