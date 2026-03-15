@@ -13,7 +13,7 @@ Let's see a problem to understand it better. This problem from [AtCoder](https:/
 The core of this problem is: given a directed graph with $N$ vertices labeled with numbers from 1 to $N$ and given $Q$ queries, answer, for each query, what's the minimum possible maximum index over a path, if we choose the best path.
 How can we answer that when $N \le 2000$, $M \le N(N - 1)$ and $Q \le 10^{4}$ in at most 4.5 s?
 I could solve this problem thinking that I can solve each query $(s_i, t_i)$ by iterating over the vertex numbers in ascending order and keeping two sets: a **safe** set, which contains the vertices that I know are reachable from $s_i$, and another **unsafe** set, which contains the visited vertices that I don't know if are reachable from $s_i$. Furthermore, when I visit a vertex $v$ reachable from $s_i$, I run a BFS from it going to the vertices that are in **unsafe** and move them to the **safe** set, and I already know that the answer for these vertices is just $max(s_i, v)$, since $v$ is the maximum index that was visited (not including $s_i$).
-The complexity of the algorithm below is $O(\frac{N^{2}}{64} + \frac{NQ}{64})$, which is better than the editorial, which is $O(\frac{N^3}{64}+\frac{NQ}{64})$.
+The complexity of the algorithm below is $O(N^{2} + NQ)$, which is better than the editorial, which is $O(N^3 + NQ)$.
 
 ### The Algorithm
 
