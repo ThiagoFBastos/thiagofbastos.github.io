@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thiagofbastos.github.io/sitemap.xml
