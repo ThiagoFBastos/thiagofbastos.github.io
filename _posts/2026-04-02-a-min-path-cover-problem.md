@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Min Path Cover Problem
-subtitle: How Solve a Graph Problem with Min Path Cover.
+subtitle: How to Solve a Graph Problem with Min Path Cover.
 tags: [algorithms, c++, graphs, bipartite matching, hopcroft karp]
 author: Thiago Felipe Bastos da Silva
 mathjax: true
