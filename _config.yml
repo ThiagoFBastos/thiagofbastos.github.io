@@ -26,6 +26,7 @@ author: Thiago Felipe Bastos da Silva
 navbar-links:
   About Me: "aboutme"
   Resources:
+    - Github: "https://github.com/ThiagoFBastos"
     - Linkedin: "https://www.linkedin.com/in/thiago-bastos-845a691a6/"
     - Lattes: "http://lattes.cnpq.br/6326966334602358" 
     - Codeforces: "https://codeforces.com/profile/thiago_bastos/"
@@ -36,7 +37,6 @@ navbar-links:
     - Codewars: "https://www.codewars.com/users/thiago_bastos"
     - Baekjoon: "https://www.acmicpc.net/user/thiago_bastos"
     - Oj.uz: "https://oj.uz/profile/thiago_bastos"
-    - Try Hack Me: "https://tryhackme.com/p/thiagofbastos"
     - ICPC: "https://icpc.global/ICPCID/Q1JJ7BT9EOWM"
   Author's home: "https://thiagofbastos.github.io/"
 
