@@ -4,16 +4,20 @@ title: About me
 subtitle: Why you should know me?
 ---
 
-Hi, my name is <b>Thiago Felipe Bastos da Silva 🖖.</b>
+Hi, my name is <b>Thiago Felipe Bastos da Silva 🖖</b>. 
+<br><br>
+I am a C++ Software Developer with a strong background in Competitive Programming and Graph Theory, experienced in building high-performance systems and solving complex algorithmic problems.
 
 ### Quick Facts
 
-- I'm a <ins>Software Developer</ins> 🧑🏽‍💻 focused on algorithms and competitive programming.
-- I have experience programming in <b>C</b>, <b>C++</b>, <b>C#</b>, <b>JavaScript</b>, <b>Python</b>, and <b>Rust</b>.
-- I love anime, and one of my favorites is called Code Geass.
+- Software Developer focused on algorithms and performance.
+- Strong interest in Competitive Programming.
+- Favorite topics: graphs, dynamic programming, combinatorics.
+
+### Personal
+
 - I play drums 🥁.
-- I'm a big fan of Competitive Programming 🤓.
-- My favorite topics in Competitive Programming are: graphs, dynamic programming and combinatorics.
+- Anime fan (Code Geass is one of my favorites).
 
 ### My story 📖
 
@@ -27,8 +31,8 @@ Currently, I work as a C++ Developer at Tecgraf/PUC-Rio, working on a wide range
 
 ### Academic Background 👨🏽‍🎓
 
-- System Development course . <b>Colégio Pedro II</b> . 2015 - 2017
-- Computer Science bachelor . <b>UFRRJ</b> . 2018 - 2023
+- System Development Course - Colégio Pedro II (2015–2017)
+- Bachelor's Degree in Computer Science - UFRRJ (2018–2023)
 
 ### Experience 💼
 
@@ -46,14 +50,29 @@ Currently, I work as a C++ Developer at Tecgraf/PUC-Rio, working on a wide range
     - Projects carried out following the Scrum methodology.
     - Team collaboration in task execution.
     - Encouragement of self-learning.
-- Backend Developer Interniship . <b>Lions pre-owned s.a</b> . 08-2024 - 12-2024
+- Backend Developer Internship . <b>Lions pre-owned s.a</b> . 08/2024 - 12/2024
     - Development of integrations between platforms using ASP.NET Core, ensuring system interoperability and efficiency;
     - Development of intelligent chatbots using ASP.NET Core, OpenAI API, and Embeddings, providing more efficient and personalized support solutions;
     - Creation of robust and secure APIs with ASP.NET Core, supporting the company's system communication and integration needs
-- Software Developer . <b>Tecgraf/PUC-Rio</b> . 12-2024 - <b>Currently</b>
-    - C++ Developer in the Computational Geophysics Group at the Tecgraf Institute/PUC-Rio: involved in the development and     maintenance of the V3O2 software, developed in partnership between the Tecgraf Institute/PUC-Rio and Petrobras. V3O2 includes features used for the visualization, processing, and interpretation of seismic data.
+- Software Developer . <b>Tecgraf/PUC-Rio</b> . 12/2024 - <b>Currently</b>
+    - C++ Developer in the Computational Geophysics Group at the Tecgraf Institute/PUC-Rio: involved in the development and maintenance of the V3O2 software, developed in partnership between the Tecgraf Institute/PUC-Rio and Petrobras. V3O2 includes features used for the visualization, processing, and interpretation of seismic data.
 
-### Competitions 🏆
+### Tech Stack ⚙️
 
-- I regularly participate in competitive programming contests on platforms such as Codeforces, AtCoder, and CodeChef. On Codeforces, I am a Candidate Master (2067 rating, peak 2164 - Master). On AtCoder, I have a 1992 rating (peak 1998), and on CodeChef, I have a 2123 rating.
-- I placed 3rd in Rio de Janeiro and 29th nationwide in the first phase of the SBC Programming Marathon (ICPC Regionals), and later achieved 13th place in the second phase (Brazil Finals).
+- Languages: C, C++, C#, Python, JavaScript, Rust
+- Backend: ASP.NET Core, Node.js, Express
+- Databases: PostgreSQL, MySQL
+- Tools: Git, Docker, Linux
+- Concepts: Algorithms, Data Structures, Multithreading
+
+### Competitive Programming 🏆
+
+- <b>Codeforces</b>: Candidate Master (2067, peak 2164 - Master)
+- <b>AtCoder</b>: 1992 rating (peak 1998)
+- <b>CodeChef</b>: 2123 rating
+- <b>ICPC (SBC Programming Marathon)</b>
+  - 3rd place (Rio de Janeiro)
+  - 29th place (Brazil - First Phase)
+  - 13th place (Brazil Finals)
+- Solved 6000+ problems across Codeforces, AtCoder, CodeChef, Beecrowd, SPOJ, UVA Online Judge and others.
+- Participated in 200+ programming contests.
