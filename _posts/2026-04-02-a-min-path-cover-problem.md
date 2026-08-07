@@ -7,7 +7,7 @@ author: Thiago Felipe Bastos da Silva
 mathjax: true
 ---
 
-Today I wanna talk about a nice problem from "Latin America Regional Contests 2019" called [Algorithm Teaching](https://www.acmicpc.net/problem/18029) where you have to find the largest set containing smaller sets that are, for any two sets, incomparable. The core of the problem is to arrange the algorithms taught by a teacher in such a way that you don't have a set of algorithms that a student will learn that another will learn a subset of those algorithms.
+Today I wanna talk about a nice problem from "Latin America Regional Contests 2019" called [Algorithm Teaching](https://codeforces.com/gym/102428/problem/A) where you have to find the largest set containing smaller sets that are, for any two sets, incomparable. The core of the problem is to arrange the algorithms taught by a teacher in such a way that you don't have a set of algorithms that a student will learn that another will learn a subset of those algorithms.
 The answer is very easy if you know min path cover, because if you model this problem as a DAG of nodes where one is a subset of the other, the number of paths needed to cover the entire graph is the answer; this is called min path cover.
 Now think about the maximum number of nodes that you can pick such that there is no path between any pair of vertices. If the min path cover is smaller, then it is a contradiction, because there is at least a pair of nodes that belongs to a path; and if the min path cover is greater than that number of nodes, then we can select a smaller number of starting vertices of the paths that cover the entire graph.
 
