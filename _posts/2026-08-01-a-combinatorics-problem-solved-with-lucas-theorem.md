@@ -12,7 +12,7 @@ To illustrate it, I'll show a problem that I solved from [Beecrowd](https://judg
 
 But why should you use Lucas' Theorem? Because it's an elegant solution!
 
-The solution is very straightforward, except for the theorem. You divide the problem into each bit contribution, because it makes it easier, and for each number of elements you have to find whether the total number of one bits is odd (here we are considering only the number of one bits). Now comes the great use of the theorem: since we have to check whether the number of subsets where the bitwise XOR is one should be odd, you could immediately think to calculate $\binom{n}{k} (mod 2)$, but with Lucas' Theorem you can simply use a bitwise $O(1)$ check to verify the number of combinations (mod 2).
+The solution is very straightforward, except for the theorem. You divide the problem into the contribution of each bit because it makes things easier, and for each number of elements, you have to determine whether the total number of one bits is odd. More precisely, the subsets must have a one bit set in their AND operations; furthermore, the number of one bits must be odd because of the XOR property. Now comes the great use of the theorem: since we have to check whether the number of subsets where the bitwise XOR is one is odd, you could immediately think of calculating $\binom{bits_j}{i} \pmod{2}$, but with Lucas' Theorem, you can simply use a bitwise $O(1)$ check to determine whether the number of combinations is odd.
 
 ### The algorithm
 
