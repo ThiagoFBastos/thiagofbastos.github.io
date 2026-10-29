@@ -3,7 +3,7 @@ layout: post
 title: Solving a Problem with XOR Hashing
 subtitle: How I solved a problem from the Educational Codeforces Round 141.
 tags: [algorithms, XOR hashing, randomized algorithms, c++]
-author: Thiago Felipe Bastos da Silva
+author: Thiago Bastos
 mathjax: true
 ---
 

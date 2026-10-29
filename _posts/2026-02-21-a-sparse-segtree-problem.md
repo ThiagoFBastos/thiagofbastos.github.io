@@ -3,7 +3,7 @@ layout: post
 title: Solving a Problem with a Sparse Segment Tree.
 subtitle: How I implemented a Sparse Segment Tree with lazy propagation.
 tags: [algorithms, segtree, c++, data structures, trees]
-author: Thiago Felipe Bastos da Silva
+author: Thiago Bastos
 mathjax: true
 ---
 

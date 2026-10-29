@@ -3,7 +3,7 @@ layout: post
 title: A Split Graph Problem
 subtitle: Solving the Problem "Justice League" from ACM/ICPC South America Contest 2007.
 tags: [algorithms, graphs, c#, prefix sum, sorting]
-author: Thiago Felipe Bastos da Silva
+author: Thiago Bastos
 mathjax: true
 ---
 

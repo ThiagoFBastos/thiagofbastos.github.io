@@ -3,7 +3,7 @@ layout: post
 title: An Elegant Problem About Modular Arithmetic
 subtitle: Solving the problem "It's a Mod, Mod, Mod, Mod World" from Kattis.
 tags: [algorithms, number theory, c++, modular arithmetic, recursion]
-author: Thiago Felipe Bastos da Silva
+author: Thiago Bastos
 mathjax: true
 ---
 

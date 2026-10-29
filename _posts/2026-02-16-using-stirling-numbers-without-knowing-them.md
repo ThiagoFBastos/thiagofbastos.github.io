@@ -3,7 +3,7 @@ layout: post
 title: When I Used Stirling Numbers Without Knowing Them.
 subtitle: The day I solved a combinatorial graph problem.
 tags: [algorithms, dynamic programming, combinatorics, graphs, stirling numbers, c++]
-author: Thiago Felipe Bastos da Silva
+author: Thiago Bastos
 mathjax: true
 ---
 

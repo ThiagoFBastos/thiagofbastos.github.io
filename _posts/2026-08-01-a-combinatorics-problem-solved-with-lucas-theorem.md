@@ -3,7 +3,7 @@ layout: post
 title: A Combinatorics Problem Solved with Lucas' Theorem.
 subtitle: Case Study Solving Beecrowd's "Sibi-Xor"
 tags: [algorithms, math, combinatorics, c++]
-author: Thiago Felipe Bastos da Silva
+author: Thiago Bastos
 mathjax: true
 ---
 

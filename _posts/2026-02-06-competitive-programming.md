@@ -3,7 +3,7 @@ layout: post
 title: Competitive Programming
 subtitle: My Competitive Programming Journey
 tags: [competitive programming, algorithms, data structures, contests, programming, math]
-author: Thiago Felipe Bastos da Silva
+author: Thiago Bastos
 ---
 
 I started my journey in Competitive Programming when I was in high school, where I learned C and C++ and began solving problems on Brazilian platforms. At that time, I was only aware of basic programming competitions and had little exposure to more advanced topics in Competitive Programming.

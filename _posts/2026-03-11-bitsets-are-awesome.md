@@ -3,7 +3,7 @@ layout: post
 title: Bitsets are Awesome
 subtitle: How Bitsets can Speed Up the Time of our Solutions.
 tags: [algorithms, c++, graphs, bitset]
-author: Thiago Felipe Bastos da Silva
+author: Thiago Bastos
 mathjax: true
 ---
 

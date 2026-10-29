@@ -3,7 +3,7 @@ layout: post
 title: A Trick for Rotating a 2D Grid
 subtitle: Solving a Problem with Manhattan Distance Queries.
 tags: [algorithms, geometry, c++, prefix sum]
-author: Thiago Felipe Bastos da Silva
+author: Thiago Bastos
 mathjax: true
 ---
 

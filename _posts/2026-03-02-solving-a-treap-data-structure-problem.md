@@ -3,7 +3,7 @@ layout: post
 title: Solving a Treap Data Structure Problem
 subtitle: How i solved the problem "Flea Circus" from Beecrowd.
 tags: [algorithms, trees, treap, data structures, randomized algorithms, c++]
-author: Thiago Felipe Bastos da Silva
+author: Thiago Bastos
 mathjax: true
 ---
 

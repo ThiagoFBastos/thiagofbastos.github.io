@@ -3,7 +3,7 @@ layout: post
 title: A Nice Problem Involving Strings and Game Theory.
 subtitle: How I solved the problem using Aho–Corasick and Grundy numbers.
 tags: [algorithms, strings, c++, grundy numbers, aho cosarick, trees, dynamic programming]
-author: Thiago Felipe Bastos da Silva
+author: Thiago Bastos
 mathjax: true
 ---
 

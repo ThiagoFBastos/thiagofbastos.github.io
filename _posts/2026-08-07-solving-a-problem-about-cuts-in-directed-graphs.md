@@ -3,7 +3,7 @@ layout: post
 title: Solving a Problem About Cuts in Directed Graphs
 subtitle: An approach to CSES's Critical Cities problem
 tags: [algorithms, graphs, BFS, c++]
-author: Thiago Felipe Bastos da Silva
+author: Thiago Bastos
 mathjax: true
 ---
 

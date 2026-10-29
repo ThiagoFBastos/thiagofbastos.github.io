@@ -7,7 +7,7 @@ gh-badge: [star, fork, follow]
 tags: [np-hard, algorithms, closest string problem, heuristics, c++, strings, simulated annealing, iterated local search, genetic algorithm]
 comments: true
 mathjax: true
-author: Thiago Felipe Bastos da Silva
+author: Thiago Bastos
 ---
 
 The Closest String Problem has many applications in bioinformatics and your target is to find a string t, given a set S with strings of same length, such that maximum Hamming Distance between t and all $S_i$, $1 \le i \le \|S\|$, be minimum. Since it belongs the np-hard class is no known a polynomial algorithm in order to solve it. Therefore, to get a solution uses some exact method with restriction or uses some heuristic that not guarantees optimality but the answer is obtained in a reasonable time. Therefore, this work proposes to create algorithms based on metaheuristics already known as: Simulated Annealing, Iterated Local Search and Genetic Algorithm and compare the results with what has already been obtained in the literature.

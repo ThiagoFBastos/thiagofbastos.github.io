@@ -3,7 +3,7 @@ layout: post
 title: Finding the k-th Smallest Element in a Range with Parallel Binary Search.
 subtitle: A new way to solve this problem with binary search.
 tags: [algorithms, fenwick tree, rust, parallel binary search]
-author: Thiago Felipe Bastos da Silva
+author: Thiago Bastos
 mathjax: true
 ---
 

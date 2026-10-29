@@ -4,7 +4,7 @@ title: About me
 subtitle: Why you should know me?
 ---
 
-Hi, my name is <b>Thiago Felipe Bastos da Silva 🖖</b>. 
+Hi, my name is <b>Thiago Bastos 🖖</b>. 
 <br><br>
 I am a C++ Software Developer with a strong background in Competitive Programming and Graph Theory, experienced in building high-performance systems and solving complex algorithmic problems.
 
