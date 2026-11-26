@@ -52,40 +52,40 @@ inline void fft(vector<cd>& a, bool invert) {
 		if(i < j) swap(a[i], a[j]);
 	}
 
-    for(int len = 2; len <= n; len <<= 1) {
-        double ang = 2 * PI / len * (invert ? -1 : 1);
-        cd wlen(cos(ang), sin(ang));
+	for(int len = 2; len <= n; len <<= 1) {
+		double ang = 2 * PI / len * (invert ? -1 : 1);
+		cd wlen(cos(ang), sin(ang));
 		int mid = len >> 1;
-        for(int i = 0; i < n; i += len) {
-            cd w(1);
-            for(int j = 0; j < mid; ++j) {
-                cd u = a[i + j], v = a[i + j + mid] * w;
-                a[i + j] = u + v;
-                a[i + j + mid] = u - v;
-                w *= wlen;
-            }
-        }
-    }
+		for(int i = 0; i < n; i += len) {
+			cd w(1);
+			for(int j = 0; j < mid; ++j) {
+				cd u = a[i + j], v = a[i + j + mid] * w;
+				a[i + j] = u + v;
+				a[i + j + mid] = u - v;
+				w *= wlen;
+			}
+		}
+	}
 
-    if(invert) for(int i = 0; i < n; ++i) a[i] /= n;
+	if(invert) for(int i = 0; i < n; ++i) a[i] /= n;
 }
 
 inline vector<i64> multiply2(vector<int>& a) {
 
 	vector<cd> fa(a.begin(), a.end());
     
-    int n = 2 << lg(2 * a.size());
+	int n = 2 << lg(2 * a.size());
 
 	fa.resize(n);
 
-    fft(fa, false);
+	fft(fa, false);
 
-    for(int i = 0; i < n; ++i) fa[i] *= fa[i];
+	for(int i = 0; i < n; ++i) fa[i] *= fa[i];
 
-    fft(fa, true);
+	fft(fa, true);
 
 	vector<i64> result(n);
-    for(int i = 0; i < n; ++i) result[i] = round(fa[i].real());
+	for(int i = 0; i < n; ++i) result[i] = round(fa[i].real());
 
 	return result;
 }
